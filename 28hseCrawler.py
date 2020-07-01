@@ -96,17 +96,16 @@ def get_data():
         
     return result_list
 
-def write_to_excel(list):
+def write_to_excel(plist):
     wb = Workbook()
 
     # grab the active worksheet
     ws = wb.active
     
-    for i in list:
+    for i in plist:
         ws.append(i)    
     
     # Save the file
-    wb.save("G:/temp/result.xlsx")
 
 
 if __name__ == '__main__':
